@@ -28,27 +28,25 @@ Therefore, this RAG solution answers company-specific questions by combining fin
 
 ## Repository Structure
 
+```text
 Financial-Analysis-Assistant/
-│
 ├── data/
-│   ├── raw/                                      # Original PDFs and source documents
-│   ├── parsed/                                   # Parsed json files
-│   └── chunks/                                   # FAISS index, chunks, and chunks metadata
-│
+│   ├── raw/                         # Original PDFs and source documents
+│   ├── parsed/                      # Parsed JSON/text files
+│   └── chunks/                      # FAISS index, chunks, and chunk metadata
 ├── src/
-│   ├── ingestion/                                # PDF parsing
-│   ├── chunking/                                 # Chunking logic (Embedding Model + Vector DB)
-│   ├── finetuning-llm/                           # LLM fine-tuning approach
-|   └── app/                                      # end-to-end pipeline + Chat app UI
-|       ├── app.py                                # Chat UI for user interaction
-|       ├── template_embeddings.py                # Build the final prompt (financial chunks + news + selected prompt template)
-|       └── (final llm output file)               # LLM output (after fine-tuning)
-│
+│   ├── ingestion/                   # PDF parsing
+│   ├── chunking/                    # Chunking logic (Embedding Model + Vector DB)
+│   ├── finetuning-llm/              # LLM fine-tuning approach
+│   └── app/
+│       ├── app.py                   # Chat UI for end-user interaction
+│       ├── template_embeddings.py   # Build the final prompt (financial chunks + news + selected prompt template)
+│       └── prompt_builder.py        # LLM output (after fine-tuning)
 ├── docs/
-│   ├── Architecture diagram      
-|   ├── Slide deck
-|   ├── Recorded demo
-│   └── Final report       
-│
+│   ├── architecture/
+│   ├── slides/
+│   ├── demo/
+│   └── report/
 ├── README.md
-└── requirements.txt (?) 
+└── requirements.txt
+```
