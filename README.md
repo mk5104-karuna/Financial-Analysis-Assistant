@@ -33,7 +33,7 @@ Financial-Analysis-Assistant/
 ├── data/
 │   ├── raw/                         # Original PDFs and source documents
 │   ├── parsed/                      # Parsed JSON/text files
-│   └── chunks/                      # FAISS index, chunks, and chunk metadata
+│   └── artifacts/                   # FAISS index, chunks, and chunk metadata
 ├── src/
 │   ├── ingestion/                   # PDF parsing
 │   ├── chunking/                    # Chunking logic (Embedding Model + Vector DB)
