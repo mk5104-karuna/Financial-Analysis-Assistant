@@ -24,6 +24,8 @@ Built a chunking system to divide company documents into usable snippets with me
 ### Ayon: 
 Researched Google Cloud TPU strength and cloud storage size. Researched initial UI app format. 
 
+# App screenshot
+
 ![alt text](/images/appimage.png)
 
 # Requirements and Instructions
@@ -87,6 +89,11 @@ In a notebook cell:
 ```python
 %run src/app.py
 ```
+
+### Live link (Valid until Dec 25, 2025): __(Warning! Running a query will download the 11 GB model and crash on non-Mac's)__
+
+Click on the link to launch a pre-compiled app in your browser:
+[FinRAG-Lite Gradio Live Link](https://c266a3985b334efa69.gradio.live/)
 
 ### Time estimate
 On an **M1 Mac with ~16GB VRAM**, a single query typically takes **~180–200 seconds** end-to-end (prompt build + local inference + formatting).  
