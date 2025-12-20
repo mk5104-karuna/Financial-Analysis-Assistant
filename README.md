@@ -124,9 +124,11 @@ Therefore, this RAG solution answers company-specific questions by combining fin
 
 We chunked each parsed filing/report into retrieval-sized passages, stored the chunk text plus metadata (e.g., source filename and page number), and embedded those chunks into dense vectors for semantic search. At runtime, the user query is embedded and used to retrieve the most relevant evidence (top snippets) from a FAISS index, providing grounded context for the RAG answer generation. The final embedding workflow is designed to return a small, consistent context window (snippets/templates/news) for prompt construction.
 
-### Fetching Relevant News - /src/PromptMaker.py
+### Fetching Relevant News - /src/PromptMaker.py and /src/app.py
 
 We implemented a NewsAPI integration to retrieve query-relevant recent (7 day) news articles using keyword searches. This supplementary context was provided to assist analysts with gauging recent sentiment, risks, and ongoings of a particular company. In order to fetch news, you will need to create a [NewsAPI API Key here](https://newsapi.ai). 
+
+We have hard coded a API key by one of our members which will likely last for a long time. Once it no longer works, replace the code in app.py with your own API key to continue to run.
 
 NewsAPI.ai's [documentation](https://newsapi.ai/documentation?tab=introduction) can be used for utilizing a wide variety of parameters to get optimal search results.
 
