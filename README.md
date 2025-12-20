@@ -16,13 +16,13 @@ Researched and implemented a live news API for news embedding using token authen
 ## 5% - Nazgul Maksutkhan, Mani Karunanidhi, and Ayon Roy
 
 ### Nazgul: 
-Researched and implemented a lightweight embedded vector system to pull relevant snippets when creating a prompt using a FAISS index. Built prompts to evaluate model performance and executed testing steps. 
+Researched and implemented a lightweight embedded vector system to pull relevant snippets when creating a prompt using a FAISS index. Built prompts to evaluate model performance and executed testing steps. Helped write final report.
 
 ### Mani: 
 Built a chunking system to divide company documents into usable snippets with metadata. Chunked collected company filings into Json files. Researched initial UI app format. Tabulated testing results.
 
 ### Ayon: 
-Researched Google Cloud TPU strength and cloud storage size. Researched initial UI app format. 
+Researched Google Cloud TPU strength and cloud storage size. Researched initial UI app format. Helped write final report.
 
 # App screenshot
 
@@ -93,7 +93,7 @@ In a notebook cell:
 ### Live link (Valid until Dec 25, 2025): __(Warning! Running a query will download the 11 GB model and crash on non-Mac's)__
 
 Click on the link to launch a pre-compiled app in your browser:
-[FinRAG-Lite Gradio Live Link](https://c266a3985b334efa69.gradio.live/)
+[FinRAG-Lite Gradio Live Link](https://1ca2d728d984c351a2.gradio.live/)
 
 ### Time estimate
 On an **M1 Mac with ~16GB VRAM**, a single query typically takes **~180–200 seconds** end-to-end (prompt build + local inference + formatting).  
